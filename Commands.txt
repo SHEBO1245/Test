@@ -1,0 +1,60 @@
+Must Convert (Normal_Folder) To (Folder.GIT) By
+- git init
+
+Commands:
+git status ---> بيجيب ليا كل الملفات الموجوده و موجوده فين 
+- Know The Status Of Files if it in 
+(Working Directory) Or (Staging Area) Or (Local Repository) Or (Remote Repository)
+
+
+✅ لو عايز تضبط الاسم والإيميل لكل المشاريع (الأفضل
+Write:
+ 
+git config --global user.name "Your Name"
+git config --global user.email "yourEmail@example.com"
+
+(If Create New Project)
+--> First Step ---> Git add FileName.txt ---> Transform File To (Staging Area )
+--> Second Step ---> git commit -m "create FileName.txt" ---> 
+Transform File To (Local Repository )
+<------------------------------------------------------------------------------>
+
+(If Modified Project) & (Transform File To Local_Repository)
+ 
+git commit -a -m "modify wanna_marry.txt"
+<------------------------------------------------------------------------------>
+(If Know Number Of Commits)
+- git log 
+<------------------------------------------------------------------------------>
+If (File get Come_back From Staging Area To Working Directory)
+- git reset file3.txt 
+- git restor --staged file3.txt (Both Correct)
+<------------------------------------------------------------------------------>
+to know the number of commits & where is the head ??
+- git log --oneline
+<------------------------------------------------------------------------------>
+To delete all commits & file 
+- git reset --hard HEAD^
+<------------------------------------------------------------------------------>
+To Add 2 files to (Local repository)
+- git add file5.txt file6.txt
+<------------------------------------------------------------------------------>
+To Add All Files To working directory by one command
+- git add .
+- git add --all
+- git add -a
+<------------------------------------------------------------------------------>
+To Add last File(if status modified or unstaged) To last commit 
+- git commit --amend -m "modify FileName.txt"
+<------------------------------------------------------------------------------>
+If You want To get Clone From The Project To Your Device
+- git clone + Project_Link
+<------------------------------------------------------------------------------>
+To upload Files From Local Repo To GIT-Hub (Remote Repo)
+origin Refer To Variable That Link Store_In
+- git remote add origin + Link ---> (To Store Link In Variable)
+- git push origin main ---> (To Upload)
+- To Delete Data From Origin (git remote rm origin)
+<------------------------------------------------------------------------------>
+to get all updates that in same file (if file in working directory)
+- git diff 
